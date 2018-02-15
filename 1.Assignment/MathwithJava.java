@@ -1,7 +1,7 @@
-import java.io.File; //for file operations
-import java.io.FileNotFoundException; //is used for throwing a exception in case of not find any input text file.
-import java.util.Scanner; //java.util.Scanner class can be used to read file in Java. 
-import java.math.*;  // to use math library (pow(a,b),sin(x)..)
+import java.io.File; 
+import java.io.FileNotFoundException; 
+import java.util.Scanner; 
+import java.math.*;  
 
 public class HelloJava {
 	
@@ -53,7 +53,7 @@ public class HelloJava {
 		if(sayi==0)
 			return 1;
 		else
-			return sayi*factoriyel(sayi-1);   //recursive part
+			return sayi*factoriyel(sayi-1);   
 	}
 	public static double Func3(double dnumb)
 	{    /* for this method; implement arcsinh(x) function as Maclaurin Series. 
@@ -117,11 +117,10 @@ public class HelloJava {
 		{	
 			int copyNumber=number;
 			String s_Number=copyNumber+"";
-			int i_length=s_Number.length();   //"length()" which returns the number of characters contained in the string object.
+			int i_length=s_Number.length();  
 			int sum=0;
 		while(copyNumber!=0)
-		{				/*Separates the entered number by digits and power of as the number of digits for each number.
-											153= 1^3+5^3+3^3=153  */
+		{				
 		int digit=copyNumber%10;
 		sum=sum+(int)Math.pow(digit, i_length);
 		copyNumber=copyNumber/10;
